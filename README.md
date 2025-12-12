@@ -1,47 +1,131 @@
-# MERN E-COMMERCE TUTORIAL
+# 🛒 MERN E-Commerce Application
 
-Hi! My name is **Abhishek Singh**, I have created this tutorial to teach MERN Stack for free on YouTube.
+A complete, production-ready **MERN Stack E-Commerce Application** built using **MongoDB, Express, React, and Node.js**.  
+This project follows the tutorial series by **Abhishek Singh (6 Pack Programmer)** and is designed to be a clean, well-structured reference for MERN learners and open-source contributors.
 
-# Prerequisite
+---
 
-1.  Must have basic knowledge of **Node**, **React**, **Express**, **MongoDB** . _I have made tutorial on each technology on YouTube , make sure to check it out_. **Links are Below respectively**
-2.  Node - https://youtu.be/BSO9C8Z-YV8
-3.  React - https://youtu.be/99kgUCIMboY
-4.  Express - https://youtu.be/teipbke8c4A\
-5.  MongoDB - https://youtu.be/AYDP1S5BbTo
-6.  RestApi - https://youtu.be/AhCSfuG9Jxw _(optional)_
+## 🚀 Features Overview
 
-# Install Dependencies
+### 👤 User Features
+- User Signup & Login (JWT Authentication)  
+- Update Profile & Change Password  
+- Add to Cart  
+- Create Orders & Track Order History  
+- Forgot / Reset Password via Email  
+- Cloud-based product image storage (Cloudinary)  
 
-**For Backend** - `npm i`
+### 🛠️ Admin Features
+- Create / Edit / Delete Products  
+- Manage Users  
+- Manage Orders  
+- Admin Dashboard (Upcoming)  
+- Fully Protected Admin Routes  
 
-**For Frontend** - `cd frontend` ` npm i`
+---
 
-## Env Variables
+## 📦 Tech Stack
 
-Make Sure to Create a config.env file in backend/config directory and add appropriate variables in order to use the app.
+### **Frontend**
+- React  
+- Redux  
+- Axios  
+- React Router  
 
-**Essential Variables**
-PORT=
-DB_URI =
-STRIPE_API_KEY=
-STRIPE_SECRET_KEY=
-JWT_SECRET=
-JWT_EXPIRE=
-COOKIE_EXPIRE=
-SMPT_SERVICE =
-SMPT_MAIL=
-SMPT_PASSWORD=
-SMPT_HOST=
-SMPT_PORT=
-CLOUDINARY_NAME
-CLOUDINARY_API_KEY
-CLOUDINARY_API_SECRET
-_fill each filed with your info respectively_
+### **Backend**
+- Node.js  
+- Express  
+- MongoDB + Mongoose  
+- Cloudinary  
+- Stripe Integration (Optional)  
 
-## Author
+---
 
-**Instagram** Click [Here](https://www.instagram.com/meabhisingh) **@meAbhiSingh**
-**YouTube** Click [Here](https://www.youtube.com/channel/UCO7afj9AUo0zV69pqEYhcjw/) **6 Pack Programmer**
-**LinkedIn** Click [Here](https://in.linkedin.com/in/meabhisingh) **@meAbhiSingh**
-**Twitter** Click [Here](https://twitter.com/meAbhi_Singh) **@meAbhi_Singh**
+## 📁 Project Structure
+
+```
+mernProjectEcommerce/
+│── backend/        # Node.js + Express API
+│── frontend/       # React Application
+└── config/         # Environment Variables
+```
+
+---
+
+## ⚙️ Setup & Installation
+
+### **1️⃣ Clone the Repository**
+```bash
+git clone https://github.com/dipgarg0011/mernProjectEcommerce.git
+cd mernProjectEcommerce
+```
+
+### **2️⃣ Install Backend Dependencies**
+```bash
+cd backend
+npm install
+```
+
+### **3️⃣ Install Frontend Dependencies**
+```bash
+cd ../frontend
+npm install
+```
+
+---
+
+# 🧩 Environment Variables (Copy & Paste)
+
+Create a file named **`.env`** inside the **backend/** folder and paste this:
+
+```bash
+# -----------------------------------------
+# BASIC SERVER CONFIG
+# -----------------------------------------
+PORT=4000
+DB_URI=your_mongodb_connection_string
+
+# -----------------------------------------
+# JWT AUTH
+# -----------------------------------------
+JWT_SECRET=your_jwt_secret_key
+JWT_EXPIRE=5d
+COOKIE_EXPIRE=5
+
+# -----------------------------------------
+# STRIPE PAYMENT (Optional)
+# -----------------------------------------
+STRIPE_API_KEY=your_stripe_public_key
+STRIPE_SECRET_KEY=your_stripe_secret_key
+
+# -----------------------------------------
+# SMTP EMAIL (For Forgot Password)
+# -----------------------------------------
+SMPT_SERVICE=gmail
+SMPT_MAIL=your_email@gmail.com
+SMPT_PASSWORD=your_email_app_password
+SMPT_HOST=smtp.gmail.com
+SMPT_PORT=465
+
+# -----------------------------------------
+# CLOUDINARY CONFIG
+# -----------------------------------------
+CLOUDINARY_NAME=your_cloudinary_cloud_name
+CLOUDINARY_API_KEY=your_cloudinary_api_key
+CLOUDINARY_API_SECRET=your_cloudinary_api_secret
+```
+
+---
+
+## 🎓 Tutorial Reference
+This project is inspired by the following MERN course playlist:
+
+- **Node.js** — https://youtu.be/BSO9C8Z-YV8  
+- **React** — https://youtu.be/99kgUCIMboY  
+- **Express.js** — https://youtu.be/teipbke8c4A  
+- **MongoDB** — https://youtu.be/AYDP1S5BbTo  
+- **REST API (Optional)** — https://youtu.be/AhCSfuG9Jxw  
+
+---
+
+
